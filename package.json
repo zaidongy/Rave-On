@@ -1,0 +1,26 @@
+{
+    "name": "raveon",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "client-install": "npm install --prefix client",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\" "
+    },
+    "author": "Chris Yang",
+    "license": "MIT",
+    "dependencies": {
+        "concurrently": "^4.0.1",
+        "express": "^4.16.4",
+        "mongoose": "^5.3.6"
+    },
+    "engines": {
+        "node": "8.9.4"
+    },
+    "devDependencies": {
+        "dotenv": "^6.1.0"
+    }
+}
